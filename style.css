@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 /*BACKGROUND INTERACTIF MODERNE*/
 
 body {
@@ -81,6 +84,7 @@ header {
   display: flex;
   justify-content: center;
   z-index: 1000;
+  padding-top: 8px;
 }
 
 .navbar {
@@ -221,6 +225,11 @@ header {
   .burger {
     display: flex;
   }
+
+  body.light .nav-links a {
+  color: #ffffff;
+  
+}
 
 }
 
