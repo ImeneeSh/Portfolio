@@ -28,20 +28,14 @@
 
             <ul class="nav-links">
 
-                <li><a data-fr="Accueil" data-en="Home">Accueil</a></li>
-
-                <li><a data-fr="À propos" data-en="About">À propos</a></li>
-
-                <li><a data-fr="Compétences" data-en="Skills">Compétences</a></li>
-
-                <li><a data-fr="Expérience" data-en="Experience">Expérience</a></li>
-
-                <li><a data-fr="Projets / Certifications" data-en="Projects / Certifications">Projets /
+                <li><a href="#home" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+                <li><a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a></li>
+                <li><a href="#projects" data-fr="Projets / Certifications" data-en="Projects / Certifications">Projets /
                         Certifications</a></li>
-
-                <li><a data-fr="Langues" data-en="Languages">Langues</a></li>
-
-                <li><a data-fr="Centres d'intérêt" data-en="Interests">Centres d'intérêt</a></li>
+                <li><a href="#languages" data-fr="Langues" data-en="Languages">Langues</a></li>
+                <li><a href="#interests" data-fr="Centres d'intérêt" data-en="Interests">Centres d'intérêt</a></li>
 
             </ul>
 
@@ -62,6 +56,87 @@
         </nav>
 
     </header>
+    <section class="hero" id="home">
+        <h1 class="reveal"><span class="gradient-text">Nour El Imene Sahi</span></h1>
+        <p class="reveal"
+            data-fr="Future Ingénieure d'État en Informatique spécialisée en Génie Logiciel. Passionnée par la conception de solutions innovantes et performantes."
+            data-en="Future State Engineer in Computer Science specialized in Software Engineering. Passionate about designing innovative and high-performance solutions.">
+            Future Ingénieure d'État en Informatique spécialisée en Génie Logiciel. Passionnée par la conception de
+            solutions innovantes et performantes.
+        </p>
+        <div class="cta-buttons reveal">
+            <a href="#" class="btn btn-primary">
+                <i class="fa-solid fa-download"></i>CV
+            </a>
+            <a href="#" class="btn btn-secondary">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="reveal">
+        <h2 class="section-title" data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; max-width: 800px;">
+            Actuellement en fin de cycle d'ingénieur, je me concentre sur l'architecture logicielle et le développement
+            full-stack. Mon objectif est de transformer des besoins complexes en code propre, maintenable et efficace.
+        </p>
+    </section>
+
+    <section id="skills" class="reveal">
+        <h2 class="section-title" data-fr="Mes Compétences" data-en="My Skills">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 data-fr="Langages" data-en="Languages">Langages</h3>
+                <div class="skill-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">C++</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 data-fr="Frameworks" data-en="Frameworks">Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">Angular</span>
+                    <span class="tag">Node.js</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 data-fr="Outils & DevOps" data-en="Tools & DevOps">Outils & DevOps</h3>
+                <div class="skill-tags">
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">UML</span>
+                    <span class="tag">Agile / Scrum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="reveal">
+        <h2 class="section-title" data-fr="Expérience Professionnelle" data-en="Professional Experience">Expérience
+            Professionnelle</h2>
+        <div class="experience-card">
+            <div class="logo-company">
+                <img src="https://upload.wikimedia.org/wikipedia/fr/4/4c/Logo_Cevital.png" alt="Cevital Logo">
+            </div>
+            <div class="exp-details">
+                <h3 data-fr="Stagiaire Ingénieure Génie Logiciel" data-en="Software Engineering Intern">Stagiaire
+                    Ingénieure Génie Logiciel</h3>
+                <h4 style="color: var(--accent-blue);">Cevital</h4>
+                <p style="margin: 10px 0; opacity: 0.7;">
+                    <i class="fa-solid fa-calendar-days"></i> 24 Mars 2026 - 07 Avril 2026
+                </p>
+                <p data-fr="Mission : Développement d'un module interne pour la gestion logistique."
+                    data-en="Mission: Development of an internal module for logistics management.">
+                    Mission : Développement d'un module interne pour la gestion logistique.
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
