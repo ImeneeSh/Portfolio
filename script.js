@@ -25,9 +25,21 @@ const nav = document.querySelector(".nav-links");
 
 burger.addEventListener("click", () => {
 
-  nav.classList.toggle("active");
+    nav.classList.toggle("active");
+    burger.classList.toggle("open");
+    document.body.classList.toggle("menu-open");
 
-  burger.classList.toggle("open");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    nav.classList.remove("active");
+    burger.classList.remove("open");
+    document.body.classList.remove("menu-open");
+
+  });
 
 });
 
