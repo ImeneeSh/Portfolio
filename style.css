@@ -63,6 +63,11 @@ body.light {
     radial-gradient(circle at 50% 50%, #ffffff 0%, var(--bg-light) 100%);
 }
 
+body.light .nav-links a.active{
+
+  color: var(--accent-blue);
+
+}
 
 body.light .nav-links a::after {
   background: linear-gradient(90deg, #006eff, #00c4ff);
@@ -78,6 +83,29 @@ body.light .nav-links a {
 
 body.light .burger span {
   background: #111;
+}
+
+
+body.light .skill-category{
+
+  background: rgba(255,255,255,0.8);
+
+  border:1px solid rgba(0,0,0,0.08);
+
+}
+
+body.light .experience-card{
+
+  background: rgba(255,255,255,0.8);
+
+  border:1px solid rgba(0,0,0,0.08);
+
+}
+
+body.light .tag{
+
+  background: rgba(0,0,0,0.05);
+
 }
 
 /* HEADER */
@@ -283,17 +311,22 @@ section::after{
 
 .section-title{
 
-  font-size: clamp(34px,4vw,46px);
+  font-size: clamp(36px,4vw,48px);
 
-  margin-bottom:60px;
+  margin-bottom:70px;
+
+  text-align:center;
 
   position:relative;
-
-  display:flex-block;
 
   font-weight:700;
 
   letter-spacing:0.5px;
+
+  display:inline-block;
+
+  left:50%;
+  transform:translateX(-50%);
 
   background: linear-gradient(
       90deg,
@@ -311,11 +344,15 @@ section::after{
 
   position:absolute;
 
-  left:0;
-  bottom:-12px;
+  left:50%;
+  transform:translateX(-50%);
 
-  width:65%;
+  bottom:-14px;
+
+  width:120px;
   height:3px;
+
+  border-radius:3px;
 
   background:linear-gradient(
       90deg,
@@ -323,12 +360,14 @@ section::after{
       var(--accent-purple)
   );
 
-  border-radius:3px;
 }
+
+
 /* HERO SECTION */
 .hero {
 
   height: 100vh;
+  padding-bottom: 0;
 
   display: flex;
   flex-direction: column;
@@ -352,7 +391,7 @@ section::after{
 
   line-height: 1.1;
 
-  font-weight:700;
+  font-weight:bold;
 
   letter-spacing:1px;
 
@@ -460,12 +499,109 @@ section {
   margin: 0 auto;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  position: relative;
-  display: inline-block;
+
+/* TIMELINE PARCOURS */
+
+.timeline-title{
+
+  margin-top:80px;
+
+  margin-bottom:50px;
+
+  font-size:30px;
+
+  text-align:center;
+
+  color:var(--accent-blue);
 }
+
+.timeline{
+
+  position:relative;
+
+  margin-top:40px;
+
+  padding-left:40px;
+
+}
+
+.timeline::before{
+
+  content:"";
+
+  position:absolute;
+
+  left:10px;
+
+  top:0;
+
+  width:2px;
+
+  height:100%;
+
+  background:linear-gradient(
+    to bottom,
+    var(--accent-blue),
+    var(--accent-purple)
+  );
+}
+
+.timeline-item{
+
+  position:relative;
+
+  margin-bottom:40px;
+
+}
+
+.timeline-dot{
+
+  position:absolute;
+
+  left:-2px;
+
+  width:14px;
+
+  height:14px;
+
+  background:var(--accent-blue);
+
+  border-radius:50%;
+
+  box-shadow:0 0 10px var(--accent-blue);
+
+}
+
+.timeline-content{
+
+  padding-left:30px;
+
+}
+
+.timeline-date{
+
+  color:var(--accent-blue);
+
+  font-weight:600;
+
+  font-size:0.9rem;
+
+}
+
+.timeline-content h4{
+
+  margin:6px 0;
+
+  font-size:1.1rem;
+
+}
+
+.timeline-content p{
+
+  opacity:0.7;
+
+}
+
 
 /* COMPETENCES */
 .skills-grid {
@@ -532,6 +668,7 @@ body.light .skill-category {
 
   transform:scale(1.05);
 }
+
 
 /* EXPERIENCE */
 .experience-card{

@@ -1,3 +1,9 @@
+/* REVENIR EN HAUT AU RELOAD */
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 /* FOND ANIME */
 
 document.addEventListener("mousemove", (e) => {
@@ -166,5 +172,19 @@ window.addEventListener("scroll", () => {
     }
 
   });
+
+});
+
+/* ACTIVER ACCUEIL PAR DEFAUT */
+
+window.addEventListener("load", () => {
+
+  navLinks.forEach(link => link.classList.remove("active"));
+
+  const homeLink = document.querySelector('.nav-links a[href="#home"]');
+
+  if(homeLink){
+    homeLink.classList.add("active");
+  }
 
 });
