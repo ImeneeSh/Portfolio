@@ -31,9 +31,9 @@ const nav = document.querySelector(".nav-links");
 
 burger.addEventListener("click", () => {
 
-    nav.classList.toggle("active");
-    burger.classList.toggle("open");
-    document.body.classList.toggle("menu-open");
+  nav.classList.toggle("active");
+  burger.classList.toggle("open");
+  document.body.classList.toggle("menu-open");
 
 });
 
@@ -111,14 +111,14 @@ langBtn.addEventListener("click", () => {
 
 const reveals = document.querySelectorAll(".reveal");
 
-function revealOnScroll(){
+function revealOnScroll() {
 
   reveals.forEach(el => {
 
     const windowHeight = window.innerHeight;
     const elementTop = el.getBoundingClientRect().top;
 
-    if(elementTop < windowHeight - 100){
+    if (elementTop < windowHeight - 100) {
       el.classList.add("active");
     }
 
@@ -135,9 +135,9 @@ const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
 
-  if(window.scrollY > 50){
+  if (window.scrollY > 50) {
     navbar.classList.add("scrolled");
-  }else{
+  } else {
     navbar.classList.remove("scrolled");
   }
 
@@ -157,7 +157,7 @@ window.addEventListener("scroll", () => {
     const sectionTop = section.offsetTop - 200;
     const sectionHeight = section.clientHeight;
 
-    if(scrollY >= sectionTop){
+    if (scrollY >= sectionTop) {
       current = section.getAttribute("id");
     }
 
@@ -167,7 +167,7 @@ window.addEventListener("scroll", () => {
 
     link.classList.remove("active");
 
-    if(link.getAttribute("href") === "#" + current){
+    if (link.getAttribute("href") === "#" + current) {
       link.classList.add("active");
     }
 
@@ -183,8 +183,32 @@ window.addEventListener("load", () => {
 
   const homeLink = document.querySelector('.nav-links a[href="#home"]');
 
-  if(homeLink){
+  if (homeLink) {
     homeLink.classList.add("active");
   }
 
 });
+
+// FILTER PROJECTS / CERTIFICATIONS
+const filterBtns = document.querySelectorAll(".filter-btn");
+const filterItems = document.querySelectorAll(".filter-item");
+
+filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filterValue = btn.dataset.filter;
+
+        filterItems.forEach(item => {
+            if (item.classList.contains(filterValue)) {
+                item.classList.add("active");
+                item.style.display = "grid"; 
+            } else {
+                item.classList.remove("active");
+                item.style.display = "none"; 
+            }
+        });
+    });
+});
+document.querySelector('.filter-btn.active').click();
