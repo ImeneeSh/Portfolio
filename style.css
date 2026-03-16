@@ -173,7 +173,7 @@ header {
   top: 0;
   background: rgba(5, 7, 20, 0.1);
   backdrop-filter: blur(24px);
-  border-radius: 5px;
+  border-radius: 35px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
