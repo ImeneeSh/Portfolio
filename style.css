@@ -90,7 +90,17 @@ body.light .skill-category{
 
   background: rgba(255,255,255,0.8);
 
-  border:1px solid rgba(0,0,0,0.08);
+  border:1px solid #00d4ff;
+
+}
+
+body.light .skill-category h3{
+  color: #6e00ff;
+}
+
+body.light .skill-category:hover{
+
+  border:2px solid var(--accent-blue);
 
 }
 
@@ -98,7 +108,15 @@ body.light .experience-card{
 
   background: rgba(255,255,255,0.8);
 
-  border:1px solid rgba(0,0,0,0.08);
+  border:1px solid #00d4ff;
+
+}
+
+body.light .experience-card:hover{
+
+  background: rgba(255,255,255,0.8);
+
+  border:2px solid var(--accent-blue);
 
 }
 
@@ -106,6 +124,21 @@ body.light .tag{
 
   background: rgba(0,0,0,0.05);
 
+}
+
+body.light .tag:hover{
+
+   background:linear-gradient(90deg,#00d4ff,#6e00ff);
+
+  color:#ffffff;
+
+}
+
+body.light .btn-secondary{
+
+  border:1px solid rgb(0, 0, 0);
+
+  color:inherit;
 }
 
 /* HEADER */
@@ -665,8 +698,6 @@ body.light .skill-category {
   background:linear-gradient(90deg,#00d4ff,#6e00ff);
 
   color:#000;
-
-  transform:scale(1.05);
 }
 
 
@@ -743,7 +774,7 @@ body.light .skill-category {
     height: 100vh;
 
     background: rgba(5, 7, 20, 0.75);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(35px);
 
     transition: 0.5s;
   }
