@@ -945,12 +945,14 @@ opacity:1;
     align-items: center;
     justify-content: center;
     min-height: 180px; 
+    position: relative;
     box-sizing: border-box; 
 }
 
 .cert-card h3 {
     font-size: 1.1rem; 
     margin-bottom: 8px;
+    margin-top: 15%;
     color: #fff;
 }
 
@@ -985,10 +987,21 @@ opacity:1;
     color: #000;
 }
 
-.cert-icon {
-  font-size: 40px;
-  color: var(--accent-purple);
-  margin-right: 20px;
+.cert-date {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 11px;
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: rgba(0, 212, 255, 0.12);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+
+  color: var(--accent-blue);
+
+  backdrop-filter: blur(10px);
 }
 
 .project-links {

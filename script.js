@@ -212,4 +212,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelector('.filter-btn.active').click();
+  sortCertifications();
 });
+
+// TRI DES CERTIFICATIONS PAR DATE
+
+function sortCertifications() {
+  const certGrid = document.querySelector(".cert-grid");
+  const certCards = Array.from(certGrid.querySelectorAll(".cert-card"));
+
+  certCards.sort((a, b) => {
+    const dateA = new Date(a.dataset.date);
+    const dateB = new Date(b.dataset.date);
+    return dateB - dateA; 
+  });
+
+  certCards.forEach(card => certGrid.appendChild(card));
+}
