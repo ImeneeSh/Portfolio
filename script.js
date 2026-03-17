@@ -130,17 +130,14 @@ window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
 /* HEADER EFFET BLUR EN SCROLLANT */
-
-const navbar = document.querySelector(".navbar");
+const mainHeader = document.querySelector("header"); 
 
 window.addEventListener("scroll", () => {
-
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-
+    if (window.scrollY > 50) {
+        mainHeader.classList.add("scrolled"); 
+    } else {
+        mainHeader.classList.remove("scrolled");
+    }
 });
 
 /* SECTION ACTIVE DANS LE NAVBAR */
