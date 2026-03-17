@@ -192,9 +192,9 @@ header.scrolled {
 
 header.scrolled .navbar { 
     border-radius: 0; 
-    background: rgba(5, 7, 20, 0.014);
+    background: rgba(5, 7, 20, 0.1);
     backdrop-filter: blur(24px);
-    padding: 20px 40px; 
+    padding: 15px 40px; 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -821,18 +821,12 @@ border:none;
   transition:0.3s;
 }
 
-.filter-item{
-display:none;
-width:100%;
+.filter-item {
+  display: none;
 }
 
-.filter-item.active{
-display:grid !important;
-}
-
-.projects-grid.active,
-.cert-grid.active{
-display:grid;
+.filter-item.active {
+  display: grid;
 }
 
 /* PROJETS & CERTIFICATIONS */
@@ -1017,7 +1011,6 @@ opacity:1;
 }
 
 .cert-grid {
-    display: grid !important; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 30px;
     width: 100%;

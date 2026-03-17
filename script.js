@@ -187,25 +187,29 @@ window.addEventListener("load", () => {
 });
 
 // FILTER PROJECTS / CERTIFICATIONS
-const filterBtns = document.querySelectorAll(".filter-btn");
-const filterItems = document.querySelectorAll(".filter-item");
+document.addEventListener("DOMContentLoaded", () => {
 
-filterBtns.forEach(btn => {
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const filterItems = document.querySelectorAll(".filter-item");
+
+  filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        filterBtns.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
 
-        const filterValue = btn.dataset.filter;
+      filterBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
 
-        filterItems.forEach(item => {
-            if (item.classList.contains(filterValue)) {
-                item.classList.add("active");
-                item.style.display = "grid"; 
-            } else {
-                item.classList.remove("active");
-                item.style.display = "none"; 
-            }
-        });
+      const filterValue = btn.dataset.filter;
+
+      filterItems.forEach(item => {
+        item.style.display = "none";
+
+        if (item.classList.contains(filterValue)) {
+          item.style.display = "grid";
+        }
+      });
+
     });
+  });
+
+  document.querySelector('.filter-btn.active').click();
 });
-document.querySelector('.filter-btn.active').click();
