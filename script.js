@@ -1,8 +1,10 @@
 /* REVENIR EN HAUT AU RELOAD */
-
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
+window.addEventListener("load", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 
 /* FOND ANIME */
 
@@ -130,14 +132,14 @@ window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
 /* HEADER EFFET BLUR EN SCROLLANT */
-const mainHeader = document.querySelector("header"); 
+const mainHeader = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        mainHeader.classList.add("scrolled"); 
-    } else {
-        mainHeader.classList.remove("scrolled");
-    }
+  if (window.scrollY > 50) {
+    mainHeader.classList.add("scrolled");
+  } else {
+    mainHeader.classList.remove("scrolled");
+  }
 });
 
 /* SECTION ACTIVE DANS LE NAVBAR */
@@ -224,7 +226,7 @@ function sortCertifications() {
   certCards.sort((a, b) => {
     const dateA = new Date(a.dataset.date);
     const dateB = new Date(b.dataset.date);
-    return dateB - dateA; 
+    return dateB - dateA;
   });
 
   certCards.forEach(card => certGrid.appendChild(card));
