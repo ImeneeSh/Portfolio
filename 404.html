@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page non trouvée - Nour El Imene Sahi</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: var(--bg-dark);
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body.light {
+      background: var(--bg-light);
+      color: #111;
+    }
+
+    .error-container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .error-container h1 {
+      font-size: 6rem;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #00d4ff, #6e00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .error-container p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .error-container a {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #00d4ff, #6e00ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: transform 0.3s ease;
+    }
+
+    .error-container a:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="dark">
+
+  <div class="error-container">
+    <h1>404</h1>
+    <p>Cette page n'existe pas pour l'instant.<br>
+       Elle sera ajoutée prochainement.</p>
+    <a href="index.html"><i class="fa-solid fa-house"></i> Retour à l'accueil</a>
+  </div>
+
+</body>
+
+</html>
