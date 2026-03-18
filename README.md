@@ -37,7 +37,7 @@ The goal of this portfolio is to provide a clean, modern, and interactive interf
 
 ## Project Structure
 
-
+```
 portfolio/
 │
 ├── index.html # Main HTML structure
@@ -45,7 +45,7 @@ portfolio/
 ├── script.js # Interactivity and dynamic behavior
 ├── assets/ # Images, CV, project resources
 └── README.md # Project documentation
-
+```
 
 ---
 
@@ -93,7 +93,7 @@ git clone https://github.com/your-username/your-repo.git
 
 3. Run the project:
 ```
-Simply open index.html in your browser
+Simply open index.html in your browser ;)
 ```
 
 ## Deployment
@@ -116,7 +116,7 @@ This project can be deployed using platforms such as:
 
 ## Author
 
-Nour El Imene Sahi
+Nour El Imene Sahi - 
 Computer Science Engineering Student – Software Engineering
 
 
